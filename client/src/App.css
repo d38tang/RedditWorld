@@ -1,0 +1,27 @@
+body{
+  background-color: #FE5F45;
+}
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 30px 20px 20px 20px;
+  color: white;
+}
+
+.search-field{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  width: 30px;
+}
+.content{
+  height: 100%;
+  width: 100%;
+}

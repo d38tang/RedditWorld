@@ -1,0 +1,15 @@
+.login-page{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+.jumbotron{
+  background-color: #FE5F45;
+}
+.login-reddit{
+  padding-top: 60px;
+}
+
+.fa-reddit{
+  color: #FE5F45;
+}
