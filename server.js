@@ -4,8 +4,9 @@ const io = require('socket.io')(http);
 const MongoClient = require('mongodb').MongoClient;
 const bodyParser = require('body-parser');
 const cors = require('cors')
+const databseUrl = ""; //url to connect to database
 
-MongoClient.connect('mongodb://d38tang:apptester@ds121483.mlab.com:21483/redditworld', function(err, database){
+MongoClient.connect(databaseUrl, function(err, database){
 
   if (err) return console.log(err);
 
@@ -19,7 +20,7 @@ MongoClient.connect('mongodb://d38tang:apptester@ds121483.mlab.com:21483/redditw
     console.log('user connected');
 
     socket.on('chat message', function(data){
-      
+
         db.collection(data.subreddit).save(data, function(err, result){
           db.collection(data.subreddit).find().toArray(function(err, chatHistory){
             if (err) console.log(err);

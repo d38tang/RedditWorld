@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import {Link} from 'react-router-dom';
 import './Login.css'
 
-const client_id = 'OmNfcqNuENK7iw';
+// Move authentication to backend later
+
+const client_id = ""; //client id for reddit app,
 
 class Login extends Component {
 
   render() {
-    const state = 'BJ1JKK3434J77DFKLMH8LDKFI';
+    const state = ""; //state value for reddit app
     const authLink = 'https://www.reddit.com/api/v1/authorize?client_id=' + client_id + '&response_type=token&state=' + state
     + '&redirect_uri=http://localhost:3000&duration=temporary&scope=identity';
 
